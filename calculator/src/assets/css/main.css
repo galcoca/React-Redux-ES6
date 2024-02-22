@@ -13,7 +13,7 @@ body {
   user-select: none;
 }
 
-.react-calculator {
+.reactCalculator {
     position: relative;
     margin: 0 auto;
     width: 320px;
@@ -57,7 +57,7 @@ button:hover {
   box-sizing: border-box;
 }
 
-.functions button, .math-operations button {
+.functions button, .mathOperations button {
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -65,7 +65,7 @@ button:hover {
 }
 
 .functions button:hover, 
-.math-operations button:hover {
+.mathOperations button:hover {
   color: #b696a0;
 }
 

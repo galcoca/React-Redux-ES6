@@ -1,30 +1,35 @@
+import Result from "./components/ResultComponent";
+import MathOperations from "./components/MathOperationsComponent";
+import Numbers from "./components/NumbersComponent";
+import Functions from "./components/FunctionsComponent";
+
 const App = () => {
+	const onClickButtonFunction = text => (
+		console.log('Button.Clickhandler', text)
+	)
+
+	const onClickOperationFunction = operation => (
+		console.log('Operation', operation)
+	)
+
+	const onClickEqualFunction = equal => (
+		console.log('Equal', equal)
+	)
+
+	const onDeleteFunction = Return => (
+		console.log('Return', Return)
+	)
+
+	const onContentClearFunction = clr => (
+		console.log('Clear', clr)
+	)
+
 	return (
-		<div className="react-calculator">
-			<div className="result"></div>
-			<div className="numbers">
-				<button>1</button>
-				<button>2</button>
-				<button>3</button>
-				<button>4</button>
-				<button>5</button>
-				<button>6</button>
-				<button>7</button>
-				<button>8</button>
-				<button>9</button>
-				<button>0</button>
-			</div>
-			<div className="functions">
-				<button>Clear</button>
-				<button>Remove</button>
-			</div>
-			<div className="math-operations">
-				<button>+</button>
-				<button>-</button>
-				<button>*</button>
-				<button>/</button>
-				<button>=</button>
-			</div>
+		<div className="reactCalculator">
+			<Result value={"0"}/>			
+			<Numbers onClickNumber={onClickButtonFunction}/>
+			<Functions onDelete={onDeleteFunction} onContentClear={onContentClearFunction}/>
+			<MathOperations onClickOperation={onClickOperationFunction} onClickEqual={onClickEqualFunction}/>
 		</div>
 	);
 };
