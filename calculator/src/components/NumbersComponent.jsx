@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "./ButtonComponent";
 
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+const items = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
 
 const renderNumbers = (onClickNumber) => {
 	const renderButtons = (item) => (
