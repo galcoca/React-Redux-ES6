@@ -5,14 +5,14 @@ import { Typography } from '@mui/material'
 const CityInfo = ({ city, country }) => {
   return (
     <>
-        <Typography>{city}</Typography>
-        <Typography>{country}</Typography>
+        <Typography display="inline" variant='h4'>{city}, </Typography>
+        <Typography display="inline" variant='h6'>{country}</Typography>
     </>
   )
 }
 
 CityInfo.propTypes = {
-    ciy: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired
 }
 
